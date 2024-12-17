@@ -1,0 +1,30 @@
+.label-result {
+    -fx-font-size: 18px;
+    -fx-text-fill: #555555;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+}
+
+.button-roll, .button-back {
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.button-roll {
+    -fx-background-color: #4CAF50;
+}
+
+.button-roll:hover {
+    -fx-background-color: #45a049;
+}
+
+.button-back {
+    -fx-background-color: #f44336;
+}
+
+.button-back:hover {
+    -fx-background-color: #e53935;
+}
