@@ -2,7 +2,6 @@ package com.urassh.gacha_app.util;
 
 import com.urassh.gacha_app.GachaApp;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 

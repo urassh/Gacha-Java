@@ -1,8 +1,7 @@
 package com.urassh.gacha_app;
 
+import com.urassh.gacha_app.util.Screen;
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -13,11 +12,8 @@ public class GachaApp extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(GachaApp.class.getResource(HOME_PATH));
-        Scene scene = new Scene(fxmlLoader.load(), 400, 300);
-        stage.setTitle(APP_TITLE);
-        stage.setScene(scene);
-        stage.show();
+        Screen screen = new Screen();
+        screen.transitionScreen(HOME_PATH, APP_TITLE);
     }
 
     public static void main(String[] args) {
