@@ -17,7 +17,7 @@ public class Navigator {
         this.beforeScene = from;
     }
 
-    private void navigate(String fxmlPath, String fxmlTitle) {
+    private void navigateFxml(String fxmlPath, String title) {
         try {
             if (beforeScene != null) {
                 beforeScene.getWindow().hide();
@@ -28,7 +28,7 @@ public class Navigator {
             Stage stage = new Stage();
 
             stage.setScene(scene);
-            stage.setTitle(fxmlTitle);
+            stage.setTitle(title);
             stage.show();
         } catch (Exception e) {
             e.printStackTrace();
@@ -36,10 +36,10 @@ public class Navigator {
     }
 
     public void navigateToHome() {
-        navigate(FXML_PATHS[0], "Home");
+        navigateFxml(FXML_PATHS[0], "Home");
     }
 
     public void navigateToResult() {
-        navigate(FXML_PATHS[1], "Result");
+        navigateFxml(FXML_PATHS[1], "Result");
     }
 }
