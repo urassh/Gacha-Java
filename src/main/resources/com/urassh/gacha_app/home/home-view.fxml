@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.urassh.gacha_app.controller.HomeController">
+    <Label text="Welcome to Gacha App" style="-fx-font-size: 18;" />
+
+    <Button fx:id="startButton" text="Start Gacha" onAction="#handleStartGacha" />
+</VBox>
