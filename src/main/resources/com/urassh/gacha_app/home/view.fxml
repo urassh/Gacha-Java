@@ -6,7 +6,7 @@
 
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.urassh.gacha_app.controller.HomeController"
-      stylesheets="@home-style.css">
+      stylesheets="@style.css">
     <Label text="Welcome to Gacha App" styleClass="label-title" />
     <Button fx:id="startButton" text="Start Gacha" styleClass="button-start" onAction="#handleStartGacha" />
 </VBox>

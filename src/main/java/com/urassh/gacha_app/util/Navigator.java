@@ -7,8 +7,8 @@ import javafx.stage.Stage;
 
 public class Navigator {
     private static final String[] FXML_PATHS = {
-            "home/home-view.fxml",
-            "result/result-view.fxml"
+            "home/view.fxml",
+            "result/view.fxml"
     };
 
     private final Scene beforeScene;

@@ -6,7 +6,7 @@
 
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.urassh.gacha_app.controller.ResultController"
-      stylesheets="@result-style.css">
+      stylesheets="@style.css">
     <Label fx:id="resultLabel" text="Press the button to roll!" styleClass="label-result" />
     <Button text="Roll Gacha" onAction="#handleRoll" styleClass="button-roll" />
     <Button text="Back to Home" onAction="#handleBackToHome" styleClass="button-back" />
