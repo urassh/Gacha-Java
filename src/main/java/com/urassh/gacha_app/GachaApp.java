@@ -1,6 +1,6 @@
 package com.urassh.gacha_app;
 
-import com.urassh.gacha_app.util.Screen;
+import com.urassh.gacha_app.util.Navigator;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
@@ -12,8 +12,8 @@ public class GachaApp extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        Screen screen = new Screen();
-        screen.transitionScreen(HOME_PATH, APP_TITLE);
+        Navigator navigator = new Navigator(stage.getScene());
+        navigator.navigateToHome();
     }
 
     public static void main(String[] args) {
