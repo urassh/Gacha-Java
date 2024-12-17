@@ -7,9 +7,6 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class GachaApp extends Application {
-    private static final String APP_TITLE = "Gacha App";
-    private static final String HOME_PATH = "home/home-view.fxml";
-
     @Override
     public void start(Stage stage) throws IOException {
         Navigator navigator = new Navigator(stage.getScene());

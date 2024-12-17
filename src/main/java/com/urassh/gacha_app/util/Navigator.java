@@ -28,7 +28,7 @@ public class Navigator {
             Stage stage = new Stage();
 
             stage.setScene(scene);
-            stage.setTitle(title);
+            stage.setTitle(appTitle(title));
             stage.show();
         } catch (Exception e) {
             e.printStackTrace();
@@ -41,5 +41,9 @@ public class Navigator {
 
     public void navigateToResult() {
         navigateFxml(FXML_PATHS[1], "Result");
+    }
+
+    private String appTitle(String title) {
+        return "Gacha App - " + title;
     }
 }
